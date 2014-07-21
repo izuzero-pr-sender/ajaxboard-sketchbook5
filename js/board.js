@@ -152,6 +152,7 @@
 			if (this.document_srl == document_srl)
 			{
 				$("div.rd_vote").children().eq(0).children().eq(0).html("♥ " + count);
+				$("div.addon_addvote button.btn_voted span.num").html(count);
 			}
 		},
 		triggerDocumentVoteDown: function(document_srl, count)
@@ -159,6 +160,7 @@
 			if (this.document_srl == document_srl)
 			{
 				$("div.rd_vote").children().eq(1).children().eq(0).html("♥ " + count);
+				$("div.addon_addvote button.btn_blamed span.num").html(count);
 			}
 		},
 		triggerInsertComment: function(document_srl, comment_srl)
